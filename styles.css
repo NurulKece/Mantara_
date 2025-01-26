@@ -156,4 +156,9 @@ a:hover {
         width: 100%; /* Membuat gambar mengambil 100% lebar container */
         height: auto; /* Menjaga aspek rasio */
     }
+    @media (max-width: 450px) {
+        html {
+          font-size: 55%;
+        }
+    }
 }
