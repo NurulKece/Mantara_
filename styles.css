@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: burlywood; /* Warna header yang lebih menarik */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 100px;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1800px;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.makanan h2 {
+    font-size: 2rem;
+    height: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.makanan-item{
+    background-color:burlywood;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    margin: 0.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 1500px;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    text-align:left;
+    transition: transform 0.3s;
+    margin-top: 30px;
+
+}
+.makanan-item:hover {
+    transform: scale(1.1);
+}
+
+
+.makanan-item p {
+    text-align: left; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-left: 4px solid #ff9900; 
+    padding-left: 10px; 
+}
+
+.makanan-item button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background color 0,5 ease;
+}
+.makanan-item button:hover {
+    background-color: #555;
+    color: white
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+main img{
+    display: block;
+    margin: 10px auto; 
+    width: 650px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+ul li:hover, ol li:hover {
+    color: #ff6600; /* Warna saat hover */
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc5200; /* Warna saat hover */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; 
+    }
+
+    main {
+        padding: 15px; 
+    }
+
+    main h2 {
+        font-size: 1.5rem; 
+    }
+
+    ul, ol {
+        margin-left: 15px; 
+    }
+
+    .content {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom pada perangkat kecil */
+        align-items: center; /* Menyelaraskan gambar dan teks secara horizontal */
+    }
+
+    .content img {
+        margin-right: 0; /* Menghapus margin kanan pada gambar */
+        margin-bottom: 15px; /* Menambahkan margin bawah untuk jarak */
+    }
+}
