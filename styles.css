@@ -153,7 +153,7 @@ a:hover {
     }
 
     .content img {
-        margin-right: 0; /* Menghapus margin kanan pada gambar */
-        margin-bottom: 15px; /* Menambahkan margin bawah untuk jarak */
+        width: 100%; /* Membuat gambar mengambil 100% lebar container */
+        height: auto; /* Menjaga aspek rasio */
     }
 }
